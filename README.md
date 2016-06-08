@@ -1,4 +1,4 @@
-# Boilerplate for a Reactjs project
+# Boilerplate for a React project
 
 Project is based on:
 
@@ -12,6 +12,9 @@ Project is based on:
 
 
 ## Description
+
+This project is intended to be a boilerplate for a React project involving different kind of technologies, with the goal to create an isomorphic and universal application.
+
 
 ## Installation:
 
