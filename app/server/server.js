@@ -61,7 +61,7 @@ app.get('*', (req, res, next)=> {
 			);
 
 			//res.render('../views/index', { body });
-			res.send(res.render('index', { body }));
+			res.render('index', { body });
 			//res.send(res.render('index', { body }));
 
 
