@@ -10,6 +10,10 @@ import createRoutes from '../shared/router';
 //import Immutable from 'immutable'
 //import _ from 'lodash'
 
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
+
+
 /*
 let reduxState = {}
 if (window.__REDUX_STATE__) {

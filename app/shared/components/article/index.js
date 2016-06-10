@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton';
+
 export default class Article extends React.Component {
 
     static propTypes = {
@@ -15,20 +19,32 @@ export default class Article extends React.Component {
     constructor(props) {
         super(props);
 
-        
+
     }
 
 
     render() {
 
+        const style = {
+          margin: 12
+        };
+
         return (
-            <div>
-                <h1>ARTICLE</h1>
+            <MuiThemeProvider muiTheme={getMuiTheme()}>
 
-                {this.props.params.slug};
+                <div>
+                    <h1>ARTICLE</h1>
 
-                <Link to="/" className="active">home</Link>
-            </div>
+                    {this.props.params.slug}
+
+                    <br/>
+
+                    <Link to="/" className="active">
+                        <RaisedButton label="home" style={style} />
+                    </Link>
+                </div>
+
+            </MuiThemeProvider>
         );
     }
 }

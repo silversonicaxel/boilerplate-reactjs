@@ -9,6 +9,7 @@ Project is based on:
 * gulp (http://gulpjs.com/)
 * React (https://facebook.github.io/react/)
 * React Router (https://github.com/reactjs/react-router)
+* material ui (http://www.material-ui.com/)
 
 
 ## Description
